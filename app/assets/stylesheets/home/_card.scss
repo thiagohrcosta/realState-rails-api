@@ -1,0 +1,60 @@
+.rental-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin: 10px;
+}
+
+.rental-card{
+  margin: 10px 0;
+  border: 1px solid #E8E8E8;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.rental-card:hover{
+  opacity: 0.9;
+}
+
+.card-photo{
+  width: 100%;
+}
+
+.card-title{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-address{
+  text-align: center;
+  font-weight: lighter;
+}
+
+.card-icons{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-value{
+  margin: 0 5px;
+}
+
+.rent-value{
+  border-bottom: 4px solid #3b14a7;
+}
+
+.rental-link{
+  text-decoration: none;
+  color: #000;
+}
+
+.rental-link:hover{
+  color: #3b14a7;
+}
