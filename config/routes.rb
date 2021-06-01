@@ -6,4 +6,10 @@ Rails.application.routes.draw do
       resources :rentals
     end
   end
+
+  root to: "pages#home"
+
+  resources :rentals, only: [:show]
+
+  resources :painels, only: [:index]
 end

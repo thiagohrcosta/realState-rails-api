@@ -1,0 +1,43 @@
+<div class="bg-header">
+
+  <div class="navbar-custom">
+    <%= render 'navbar' %>
+    <%= render 'bannerContent' %>
+    <%= render 'search' %>
+  </div>
+</div>
+
+<div class="container">
+  <div class="rental-grid">
+    <% @rentals.each do |rental| %>
+      <div class="rental-card">
+        <%= link_to rental_path(rental.id), class: "rental-link" do %>
+        <img class="card-photo" src="<%= rental.main_photo %>" alt="">
+        <p class="card-title"><%= rental.title %></p>
+
+        <p class="card-address"><%= rental.address.street %>, <%= rental.address.number %>, <%= rental.address.city %></p>
+
+        <div class="card-icons">
+          <div class="icons-container">
+            <div>
+            <i class="fas fa-shower fa-lg"></i><span class="icon-value">3</span>
+            </div>
+            <div>
+              <i class="fas fa-bed fa-lg"></i><span class="icon-value">4</span>
+            </div>
+            <div>
+              <i class="fas fa-car fa-lg"></i><span class="icon-value">3</span>
+            </div>
+            <div>
+              <i class="fas fa-vector-square fa-lg"></i><span class="icon-value">1000m</span>
+            </div>
+          </div>
+          <div class="">
+            <p class="rent-value">R$ <%= rental.price %>0</p>
+          </div>
+        </div>
+    <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
