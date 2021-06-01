@@ -1,0 +1,24 @@
+<div
+  class="show-header"
+  style="background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(<%= @rental.main_photo %>);">
+
+
+  <div class="navbar-custom">
+    <%= render 'pages/navbar' %>
+  </div>
+</div>
+
+<div class="container">
+  <div class="show-content">
+    <div class="row">
+      <div class="col-lg-6">
+        <h1><%= @rental.title %></h1>
+        <h4><%= @rental.address.street %>, <%= @rental.address.number %>, <%= @rental.address.city %></h4>
+      </div>
+      <div class="col-lg-6">
+        <h3>Mapa</h3>
+      </div>
+    </div>
+  </div>
+
+</div>
