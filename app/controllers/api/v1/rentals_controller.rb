@@ -8,6 +8,6 @@ class Api::V1::RentalsController < Api::V1::BaseController
 
   def set_rental
     @rental = Rental.find(params[:id])
-    authore @rental
+    authorize @rental
   end
 end
