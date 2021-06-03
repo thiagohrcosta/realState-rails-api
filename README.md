@@ -27,7 +27,7 @@ A **API** poderá ser acessada a partir do endpoint `localhost:3000/api/v1/renta
 
 ![secondImg](https://res.cloudinary.com/dloadb2bx/image/upload/v1622692045/realStateApi_wafftk.png)
 
-Cada imóvel inserido na API poderá também ser acessado pelo endpoint: `api/v1/rentals/:id`
+Cada imóvel inserido na API poderá também ser acessado pelo endpoint: `api/v1/rentals/:id`, veja [clicando aqui](http://api-realsate.herokuapp.com/api/v1/rentals/3).
 ## Home page
 ![Home](https://res.cloudinary.com/dloadb2bx/image/upload/v1622692009/realstate2_cdg0gb.png)
 
@@ -60,7 +60,7 @@ Caso o usuário decida clicar na opção **"Para alugar"** ele será encaminhado
 
 Novamente, caso o usuário clique em **"Ver detalhes"** ele será redirecionado para a página do imóvel conforme apresentada no item anterior.
 
-O menu de busca lateral ainda não foi implementado nesta versão atual, sendo apresentado apenas sua versão front-end.
+O menu de busca lateral ainda não foi implementado nesta versão atual, sendo apresentado apenas sua versão front-end. Para criar o estilo visualizado foi utilizado **Flex** e **Bootstrap**.
 
 ## Como rodar a aplicação?
 Este projeto foi desenvolvido em :
