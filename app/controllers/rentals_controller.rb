@@ -1,6 +1,6 @@
 class RentalsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index,  :home, :show]
-  before_action :set_rental, only: [:edit, :show, :update, :destroy]
+  before_action :set_rental, except: [:index, :create]
 
   def index
     @rentals = policy_scope(Rental)
