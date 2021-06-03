@@ -14,6 +14,7 @@ Gems utilizadas:
  - [Devise](https://github.com/heartcombo/devise)
  - [Pundit](https://github.com/varvet/pundit)
  - [Simple_form](https://github.com/heartcombo/simple_form)
+ - [Rspec](https://github.com/rspec/rspec-rails)
 
 ## Modelagem da API
 O modelo elaborado para o presente projeto segue devidamente apresentado abaixo:
@@ -84,6 +85,11 @@ Existem dois usuários padrões cadastrados no banco de dados que podem ser util
 
 - email: thiago@admin.com
 - senha: 123456
+
+## Testes
+Para a realização de testes unitários foi utilizada a gem Rspec, sendo criado 11 testes.
+![enter image description here](https://res.cloudinary.com/dloadb2bx/image/upload/v1622747253/reaslstateTests_mg747o.png)
+Para rodar os testes basta executar o comando `rspec spec/models` dentro da pasta do arquivo.
 
 ## Como rodar a aplicação?
 Este projeto foi desenvolvido em :
