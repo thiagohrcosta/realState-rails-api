@@ -13,6 +13,7 @@ Gems utilizadas:
 
  - [Devise](https://github.com/heartcombo/devise)
  - [Pundit](https://github.com/varvet/pundit)
+ - [Simple_form](https://github.com/heartcombo/simple_form)
 
 ## Modelagem da API
 O modelo elaborado para o presente projeto segue devidamente apresentado abaixo:
@@ -61,6 +62,14 @@ Caso o usuário decida clicar na opção **"Para alugar"** ele será encaminhado
 Novamente, caso o usuário clique em **"Ver detalhes"** ele será redirecionado para a página do imóvel conforme apresentada no item anterior.
 
 O menu de busca lateral ainda não foi implementado nesta versão atual, sendo apresentado apenas sua versão front-end. Para criar o estilo visualizado foi utilizado **Flex** e **Bootstrap**.
+
+## Painel
+Caso o usuário esteja cadastrado no site e tenha poderes (neste momento foi deixado liberado para qualquer usuário para fins de testes) ele poderá acessar o painel administrativo onde poderá cadastrar novos imóveis, editar ou remover. Toda a operação CRUD refletirá na API.
+![enter image description here](https://res.cloudinary.com/dloadb2bx/image/upload/v1622740094/realstateadmin_c44k0g.png)
+
+## Login
+Páginas não sensíveis são acessadas por qualquer usuário, contudo, para cadastrar, editar ou apagar imóveis será necessário se cadastrar previamente.
+![enter image description here](https://res.cloudinary.com/dloadb2bx/image/upload/v1622740650/realstateLogin_kfowfl.png)
 
 ## Como rodar a aplicação?
 Este projeto foi desenvolvido em :
