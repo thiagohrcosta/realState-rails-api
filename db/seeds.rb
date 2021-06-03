@@ -11,6 +11,12 @@ User.create!(
   password: "123456"
 )
 
+puts "Add admin painel...."
+
+Painel.create!(
+  title: "admin"
+)
+
 puts "Adding new database............"
 
 Address.create!(
