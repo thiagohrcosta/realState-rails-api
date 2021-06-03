@@ -17,7 +17,10 @@ class Api::V1::RentalsController < Api::V1::BaseController
   private
 
   def rental_params
-    params.require(:rental).permit(:title, :price, :bathroom, :bedroom, :garage, :address_id, :main_photo, :squareft)
+    params.require(:rental).permit(
+      :title, :price, :bathroom, :bedroom, :garage,
+      :address_id, :main_photo, :squareft, :photo_one, :photo_two, :photo_three
+    )
   end
 
   def set_rental

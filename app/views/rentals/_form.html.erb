@@ -1,0 +1,19 @@
+<%= simple_form_for @rental do |f| %>
+  <%= f.input :title, label: "Título" %>
+  <%= f.input :price, label: "Valor do aluguel" %>
+  <%= f.association :address, label: "Endereço cadastrado" %>
+  <%= f.input :main_photo, label: "Foto principal" %>
+  <%= f.input :photo_one, label: "Foto para slide 1" %>
+  <%= f.input :photo_two, label: "Foto para slide 2" %>
+  <%= f.input :photo_three, label: "Foto para slide 3" %>
+  <%= f.input :squareft, label: "Metros quadrados" %>
+  <%= f.input :bathroom, label: "Banheiros" %>
+  <%= f.input :bedroom, label: "Quartos" %>
+  <%= f.input :garage, label: "Vagas de garagem" %>
+  <%= f.input :content, label: "Descrição do imóvel" %>
+
+  <%= f.submit "Cadastrar", class: "btn btn-create w-100" %>
+
+
+
+<% end %>
