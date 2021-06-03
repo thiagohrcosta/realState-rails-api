@@ -112,3 +112,7 @@ Caso alguma migração ou seed apresente erro você poderá tentar o comando:
 
 - rails db:reset
 
+Tudo estando certo, basta rodar o comando
+
+- rails s
+
