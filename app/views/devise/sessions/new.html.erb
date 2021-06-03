@@ -1,0 +1,49 @@
+<div class="bg-header">
+
+    <%= render './pages/navbar' %>
+<div class="container">
+
+  <div class="devise-container">
+
+ <div class="row">
+      <div class="col-lg-6">
+        <img class="img-login" src="https://res.cloudinary.com/dloadb2bx/image/upload/v1622731811/photo-1582268611958-ebfd161ef9cf_tfiew9.jpg" alt="">
+      </div>
+      <div class="col-lg-6 right-login-container">
+<h2>Log in</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email",  class: "label-login" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "current-password",  class: "label-login" %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit "Log in", class: "w-100 mb-3 mt-3" %>
+  </div>
+<% end %>
+<%= render "devise/shared/links" %>
+</div>
+</div>
+
+
+
+
+  </div>
+
+</div>
+</div>
+
+<%= render './pages/footer' %>
