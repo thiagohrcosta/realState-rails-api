@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_01_200132) do
+ActiveRecord::Schema.define(version: 2021_06_03_014244) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,9 @@ ActiveRecord::Schema.define(version: 2021_06_01_200132) do
     t.string "main_photo"
     t.integer "squareft"
     t.text "content"
+    t.string "photo_one"
+    t.string "photo_two"
+    t.string "photo_three"
     t.index ["address_id"], name: "index_rentals_on_address_id"
     t.index ["user_id"], name: "index_rentals_on_user_id"
   end

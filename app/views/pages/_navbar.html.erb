@@ -1,7 +1,7 @@
 <div class="container pt-5">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">RealState - Logo</a>
+          <a class="navbar-brand" href="#"><%= image_tag "https://res.cloudinary.com/dloadb2bx/image/upload/v1622689257/logoHouse_u0zl9l.png", class: "logo-img"%> Real State - API</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -17,7 +17,7 @@
                 <% if user_signed_in? %>
                   <%= link_to "Dashboard",  painels_path, class: "btn btn-custom-login btn-outline-primary" %>
                 <% else %>
-                  <%= link_to "Login",  new_user_registration_path, class: "btn btn-custom btn-outline-primary" %>
+                  <%= link_to "Login",  new_user_registration_path, class: "btn btn-custom-login btn-outline-primary" %>
                 <% end %>
               </li>
             </ul>

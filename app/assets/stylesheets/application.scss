@@ -1,9 +1,12 @@
 @import "home/index";
 @import "show/index";
+@import "rental/index";
 
 body{
   font-family: 'Roboto', sans-serif;
 }
 
-.btn-custom{
+.logo-img{
+  margin-top: -5px;
+  width: 60px;
 }
