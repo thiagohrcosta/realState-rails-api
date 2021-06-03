@@ -14,6 +14,14 @@ Gems utilizadas:
  - [Devise](https://github.com/heartcombo/devise)
  - [Pundit](https://github.com/varvet/pundit)
 
+## Modelagem da API
+O modelo elaborado para o presente projeto segue devidamente apresentado abaixo:
+![enter image description here](https://res.cloudinary.com/dloadb2bx/image/upload/v1622692008/realstateDb_hqmmu6.png)
+
+A tabela **User** foi implementado mediante a Gem Devise, sendo padrão login por emal e senha, desta forma ocultou-se o campo password por ser inerente ao devise.
+
+![enter image description here](https://res.cloudinary.com/dloadb2bx/image/upload/v1622692009/realstateDb1_bcbwus.png)
+
 ## API endpoint
 A **API** poderá ser acessada a partir do endpoint `localhost:3000/api/v1/rentals` ou a partir do endpoint hospedado no heroku ([clique aqui](http://api-realsate.herokuapp.com/api/v1/rentals)).
 
