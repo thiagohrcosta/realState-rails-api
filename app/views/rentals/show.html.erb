@@ -12,8 +12,25 @@
   <div class="show-content">
     <div class="row">
       <div class="col-lg-6">
-        <h1><%= @rental.title %></h1>
-        <h4><%= @rental.address.street %>, <%= @rental.address.number %>, <%= @rental.address.city %></h4>
+        <h1><%= @rental.title %> </h1>
+
+        <h4 class="address-show"><%= @rental.address.street %>, <%= @rental.address.number %>, <%= @rental.address.city %></h4>
+        <p>Metragem: <%= @rental.squareft %>m²</p>
+          <div class="icons-container mt-3 mb-3">
+            <div>
+            <i class="fas fa-shower fa-lg"></i><span class="icon-value"> <%= @rental.bathroom %></span>
+            </div>
+            <div>
+              <i class="fas fa-bed fa-lg"></i><span class="icon-value"> <%= @rental.bedroom %></span>
+            </div>
+            <div>
+              <i class="fas fa-car fa-lg"></i><span class="icon-value"> <%= @rental.garage %></span>
+            </div>
+            <div>
+              <i class="fas fa-vector-square fa-lg"></i><span class="icon-value"> <%= @rental.squareft %></span>
+            </div>
+          </div>
+        <p><%= @rental.content %></p>
       </div>
       <div class="col-lg-6">
         <h3>Mapa</h3>

@@ -5,4 +5,9 @@ class RentalsController < ApplicationController
     @rental = Rental.find(params[:id])
     authorize @rental
   end
+
+  def new
+    @rental = Rental.new
+  end
+
 end
