@@ -19,6 +19,7 @@ A **API** poderá ser acessada a partir do endpoint `localhost:3000/api/v1/renta
 
 ![secondImg](https://res.cloudinary.com/dloadb2bx/image/upload/v1622692045/realStateApi_wafftk.png)
 
+Cada imóvel inserido na API poderá também ser acessado pelo endpoint: `api/v1/rentals/:id`
 ## Home page
 ![Home](https://res.cloudinary.com/dloadb2bx/image/upload/v1622692009/realstate2_cdg0gb.png)
 
