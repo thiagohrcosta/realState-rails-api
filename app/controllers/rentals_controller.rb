@@ -1,6 +1,6 @@
 class RentalsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index,  :home, :show]
-  before_action :set_rental, only: [:edit, :show, :update]
+  before_action :set_rental, only: [:edit, :show, :update, :destroy]
 
   def index
     @rentals = policy_scope(Rental)
@@ -41,6 +41,13 @@ class RentalsController < ApplicationController
       render :new
       authorize @rental
     end
+  end
+
+  def destroy
+    @rental.destroy
+    authorize @rental
+
+    redirect_to painels_path
   end
 
   private

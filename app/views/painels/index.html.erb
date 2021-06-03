@@ -4,14 +4,32 @@
     <div class="container">
 
       <div class="painel-control">
-        <h3>Gerenciar imóveis</h3>
-        <%= link_to "Cadastrar imóvel", new_rental_path %>
+        <div class="admin-header mb-5">
+          <h3>Gerenciar imóveis</h3>
+          <%= link_to "Cadastrar imóvel", new_rental_path, class: "btn-new-home" %>
+        </div>
 
         <div class="rental-admin-container">
           <% @rentals.each do |rental| %>
-            <div class="rental-admin-flex">
-              <p><%= rental.title %></p>
-              <%= link_to "Editar", edit_rental_path(rental.id) %>
+            <div class="rental-admin-flex mb-3">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img class="w-100" src="<%= rental.main_photo %>" alt="">
+                </div>
+                <div class="col-lg-7">
+                  <p><%= rental.title %></p>
+                  <p><%= rental.address.street %>, <%= rental.address.number %>, <%= rental.address.neighborhood %>, <%= rental.address.city %></p>
+
+                </div>
+                <div class="col-lg-2">
+
+                    <%= link_to "Editar", edit_rental_path(rental.id), class: "btn btn-admin-edit w-100" %>
+
+
+                    <%= link_to "Apagar", destroy_rental_path(rental.id),  method: :delete, data: { confirm: "Tem certeza que deseja remover?"}, class: "btn btn-admin-delete w-100 mt-3" %>
+
+                </div>
+              </div>
             </div>
           <% end %>
 

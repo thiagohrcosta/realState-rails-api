@@ -4,3 +4,41 @@
   color: #000;
   margin-top: 200px;
 }
+
+.admin-header{
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-new-home{
+  padding: 10px 25px;
+  background-color: #3b14a7;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-new-home:hover{
+  color: #fff;
+  opacity: 0.9;
+}
+
+.btn-admin-edit{
+  padding: 10px 25px !important;
+  background-color: #4aa96c !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+
+.btn-admin-edit:hover{
+  color: #fff;
+  opacity: 0.9;
+}
+
+.btn-admin-delete{
+  padding: 10px 25px !important;
+  background-color: #f55c47 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}

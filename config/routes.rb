@@ -11,5 +11,7 @@ Rails.application.routes.draw do
 
   resources :rentals
 
+  delete "rentals/:id", to: "rentals#destroy", as: :destroy_rental
+
   resources :painels, only: [:index]
 end
