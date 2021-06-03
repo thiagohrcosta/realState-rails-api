@@ -11,8 +11,17 @@ class RentalsController < ApplicationController
     authorize @rental
   end
 
+  def new
+    @rental = Rental.new
+    authorize @rental
+  end
+
   def create
+    set_user
     @rental = Rental.new(rentals_params)
+    @rental.user = current_user
+    authorize @rental
+
     if @rental.save
       redirect_to painels_path
     else
@@ -36,6 +45,10 @@ class RentalsController < ApplicationController
       :photo_two,
       :photo_three
     )
+  end
+
+  def set_user
+    @user = current_user.id
   end
 
 
