@@ -9,7 +9,7 @@
 
 <div class="container">
   <div class="rental-grid">
-    <% @rentals.each do |rental| %>
+    <% @rentals.sample(6).each do |rental| %>
       <div class="rental-card">
         <%= link_to rental_path(rental.id), class: "rental-link" do %>
         <img class="card-photo" src="<%= rental.main_photo %>" alt="">
@@ -20,16 +20,16 @@
         <div class="card-icons">
           <div class="icons-container">
             <div>
-            <i class="fas fa-shower fa-lg"></i><span class="icon-value">3</span>
+            <i class="fas fa-shower fa-lg"></i><span class="icon-value"> <%= rental.bathroom %></span>
             </div>
             <div>
-              <i class="fas fa-bed fa-lg"></i><span class="icon-value">4</span>
+              <i class="fas fa-bed fa-lg"></i><span class="icon-value"> <%= rental.bedroom %></span>
             </div>
             <div>
-              <i class="fas fa-car fa-lg"></i><span class="icon-value">3</span>
+              <i class="fas fa-car fa-lg"></i><span class="icon-value"> <%= rental.garage %></span>
             </div>
             <div>
-              <i class="fas fa-vector-square fa-lg"></i><span class="icon-value">1000m</span>
+              <i class="fas fa-vector-square fa-lg"></i><span class="icon-value"> <%= rental.squareft %></span>
             </div>
           </div>
           <div class="">

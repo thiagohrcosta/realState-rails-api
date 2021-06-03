@@ -37,6 +37,31 @@ Address.create!(
   country: "Brazil"
 )
 
+Address.create!(
+  street: "Avenida Amazonas",
+  number: "135",
+  neighborhood: "Centro",
+  city: "Belo Horizonte",
+  country: "Brazil"
+)
+
+Address.create!(
+  street: "Avenida Augusto de Lima",
+  number: "1274",
+  neighborhood: "Barro Preto",
+  city: "Belo Horizonte",
+  country: "Brazil"
+)
+
+Address.create!(
+  street: "Avenida Augusto de Lima",
+  number: "1549",
+  neighborhood: "Barro Preto",
+  city: "Belo Horizonte",
+  country: "Brazil"
+)
+
+
 puts "Address created..."
 
 puts "Add new rental to db..."
@@ -79,5 +104,44 @@ Rental.create!(
   garage: 2,
   squareft: 260,
   main_photo: "https://res.cloudinary.com/dloadb2bx/image/upload/v1622566100/photo-1494161402158-1b81a9a904bb_anuzr8.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada lectus vitae lectus elementum suscipit. Cras volutpat massa eget eleifend imperdiet. In eu pellentesque urna, et dapibus massa. Nulla facilisi. Nunc sodales sapien mauris, at tincidunt ipsum accumsan vitae. Praesent sit amet odio vitae dui tincidunt iaculis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vel metus placerat, posuere lorem a, tristique odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lacus sed urna finibus sagittis vel sit amet turpis. Nullam at metus feugiat mauris convallis feugiat. Praesent bibendum ut dolor ac rutrum. Vestibulum odio orci, imperdiet eget felis euismod, molestie volutpat eros."
+)
+
+Rental.create!(
+  title: "Ampla cobertura",
+  address_id: 4,
+  user_id: 1,
+  price: 4500,
+  bathroom: 3,
+  bedroom: 3,
+  garage: 2,
+  squareft: 260,
+  main_photo: "https://res.cloudinary.com/dloadb2bx/image/upload/v1622683334/photo-1493246318656-5bfd4cfb29b8_e1lk1c.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada lectus vitae lectus elementum suscipit. Cras volutpat massa eget eleifend imperdiet. In eu pellentesque urna, et dapibus massa. Nulla facilisi. Nunc sodales sapien mauris, at tincidunt ipsum accumsan vitae. Praesent sit amet odio vitae dui tincidunt iaculis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vel metus placerat, posuere lorem a, tristique odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lacus sed urna finibus sagittis vel sit amet turpis. Nullam at metus feugiat mauris convallis feugiat. Praesent bibendum ut dolor ac rutrum. Vestibulum odio orci, imperdiet eget felis euismod, molestie volutpat eros."
+)
+
+Rental.create!(
+  title: "Cozinha ampla",
+  address_id: 5,
+  user_id: 1,
+  price: 4000,
+  bathroom: 3,
+  bedroom: 3,
+  garage: 2,
+  squareft: 260,
+  main_photo: "https://images.unsplash.com/photo-1484154218962-a197022b5858?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada lectus vitae lectus elementum suscipit. Cras volutpat massa eget eleifend imperdiet. In eu pellentesque urna, et dapibus massa. Nulla facilisi. Nunc sodales sapien mauris, at tincidunt ipsum accumsan vitae. Praesent sit amet odio vitae dui tincidunt iaculis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vel metus placerat, posuere lorem a, tristique odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lacus sed urna finibus sagittis vel sit amet turpis. Nullam at metus feugiat mauris convallis feugiat. Praesent bibendum ut dolor ac rutrum. Vestibulum odio orci, imperdiet eget felis euismod, molestie volutpat eros."
+)
+
+Rental.create!(
+  title: "No coração de BH",
+  address_id: 6,
+  user_id: 1,
+  price: 4500,
+  bathroom: 3,
+  bedroom: 3,
+  garage: 2,
+  squareft: 260,
+  main_photo: "https://res.cloudinary.com/dloadb2bx/image/upload/v1622683442/photo-1584894132095-a4664fb5fd39_zgrnbe.jpg",
   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada lectus vitae lectus elementum suscipit. Cras volutpat massa eget eleifend imperdiet. In eu pellentesque urna, et dapibus massa. Nulla facilisi. Nunc sodales sapien mauris, at tincidunt ipsum accumsan vitae. Praesent sit amet odio vitae dui tincidunt iaculis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vel metus placerat, posuere lorem a, tristique odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lacus sed urna finibus sagittis vel sit amet turpis. Nullam at metus feugiat mauris convallis feugiat. Praesent bibendum ut dolor ac rutrum. Vestibulum odio orci, imperdiet eget felis euismod, molestie volutpat eros."
 )
