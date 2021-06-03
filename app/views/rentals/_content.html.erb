@@ -1,0 +1,37 @@
+<div class="show-gird">
+  <% @rentals.sample(6).each do |rental| %>
+    <div class="show-house-card">
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="img-index-rentals" src="<%= rental.main_photo %>" alt="">
+
+        </div>
+        <div class="col-lg-9">
+          <div class="rental-details-flex">
+            <h3><%= rental.title %></h3>
+            <%= link_to "Ver detalhes", rental_path(rental.id), class: "btn-see-detail" %>
+          </div>
+          <p><%= rental.address.street%>, <%= rental.address.number %>, <%= rental.address.neighborhood %>, <%= rental.address.city %></p>
+           <div class="icons-container mt-3 mb-3">
+              <div>
+              <i class="fas fa-shower fa-lg"></i><span class="icon-value"> <%= rental.bathroom %></span>
+              </div>
+              <div>
+                <i class="fas fa-bed fa-lg"></i><span class="icon-value"> <%= rental.bedroom %></span>
+              </div>
+              <div>
+                <i class="fas fa-car fa-lg"></i><span class="icon-value"> <%= rental.garage %></span>
+              </div>
+              <div>
+                <i class="fas fa-vector-square fa-lg"></i><span class="icon-value"> <%= rental.squareft %>m²</span>
+            </div>
+        </div>
+      </div>
+
+
+    </div>
+    <hr>
+  <% end %>
+
+</div>
+</div>
