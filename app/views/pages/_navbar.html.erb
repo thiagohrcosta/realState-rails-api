@@ -14,6 +14,9 @@
                 <%= link_to "Para alugar", rentals_path, class: "nav-link" %>
               </li>
               <li class="nav-item">
+                <%= link_to "Acessar API", "/api/v1/rentals", class: "nav-link" %>
+              </li>
+              <li class="nav-item">
                 <% if user_signed_in? %>
                   <%= link_to "Dashboard",  painels_path, class: "btn btn-custom-login btn-outline-primary" %>
                 <% else %>
