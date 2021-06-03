@@ -67,9 +67,23 @@ O menu de busca lateral ainda não foi implementado nesta versão atual, sendo a
 Caso o usuário esteja cadastrado no site e tenha poderes (neste momento foi deixado liberado para qualquer usuário para fins de testes) ele poderá acessar o painel administrativo onde poderá cadastrar novos imóveis, editar ou remover. Toda a operação CRUD refletirá na API.
 ![enter image description here](https://res.cloudinary.com/dloadb2bx/image/upload/v1622740094/realstateadmin_c44k0g.png)
 
+Cada usuário apenas poderá ver no painel administrativo os imóveis que ele cadastrou.
+![enter image description here](https://res.cloudinary.com/dloadb2bx/image/upload/v1622741858/realstateAdmin3_qiu3vr.png)
+
 ## Login
 Páginas não sensíveis são acessadas por qualquer usuário, contudo, para cadastrar, editar ou apagar imóveis será necessário se cadastrar previamente.
 ![enter image description here](https://res.cloudinary.com/dloadb2bx/image/upload/v1622740650/realstateLogin_kfowfl.png)
+
+Existem dois usuários padrões cadastrados no banco de dados que podem ser utilziados para teste:
+
+**Usuário 1 - admin - 6 imóveis cadastrados**
+- email: admin@admin.com
+- senha: 123456
+
+**Usuário 2 - thiago - 2 imóveis cadastrados**
+
+- email: thiago@admin.com
+- senha: 123456
 
 ## Como rodar a aplicação?
 Este projeto foi desenvolvido em :
