@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   root to: "pages#home"
 
-  resources :rentals, only: [:index, :show]
+  resources :rentals, only: [:index, :show, :new, :create]
 
   resources :painels, only: [:index]
 end

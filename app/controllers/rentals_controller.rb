@@ -11,8 +11,32 @@ class RentalsController < ApplicationController
     authorize @rental
   end
 
-  # def new
-  #   @rental = Rental.new
-  # end
+  def create
+    @rental = Rental.new(rentals_params)
+    if @rental.save
+      redirect_to painels_path
+    else
+      render :new
+    end
+  end
+
+  private
+
+  def rentals_params
+    params.require(:rental).permit(
+      :title,
+      :price,
+      :bathroom,
+      :bedroom,
+      :garage,
+      :address_id,
+      :main_photo,
+      :squareft,
+      :photo_one,
+      :photo_two,
+      :photo_three
+    )
+  end
+
 
 end
