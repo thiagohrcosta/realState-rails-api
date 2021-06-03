@@ -10,7 +10,7 @@
         <img class="img-login" src="https://res.cloudinary.com/dloadb2bx/image/upload/v1622731811/photo-1582268611958-ebfd161ef9cf_tfiew9.jpg" alt="">
       </div>
       <div class="col-lg-6 right-login-container">
-        <h2>Sign up</h2>
+        <h2>Crie uma conta</h2>
 
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
           <%= render "devise/shared/error_messages", resource: resource %>
@@ -23,7 +23,7 @@
           <div class="field">
             <%= f.label :password %>
             <% if @minimum_password_length %>
-            <em>(<%= @minimum_password_length %> characters minimum)</em>
+            <em>(<%= @minimum_password_length %> caracteres pelo menos)</em>
             <% end %><br />
             <%= f.password_field :password, autocomplete: "new-password", class: "label-login"  %>
           </div>
@@ -34,7 +34,7 @@
           </div>
 
           <div class="actions">
-            <%= f.submit "Sign up", class: "mt-3 mb-3 w-100" %>
+            <%= f.submit "Criar conta", class: "mt-3 mb-3 w-100" %>
           </div>
           <%= render "devise/shared/links" %>
         <% end %>

@@ -10,7 +10,7 @@
         <img class="img-login" src="https://res.cloudinary.com/dloadb2bx/image/upload/v1622731811/photo-1582268611958-ebfd161ef9cf_tfiew9.jpg" alt="">
       </div>
       <div class="col-lg-6 right-login-container">
-<h2>Log in</h2>
+<h2>Acessar conta</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
@@ -31,7 +31,7 @@
   <% end %>
 
   <div class="actions">
-    <%= f.submit "Log in", class: "w-100 mb-3 mt-3" %>
+    <%= f.submit "Acessar", class: "w-100 mb-3 mt-3" %>
   </div>
 <% end %>
 <%= render "devise/shared/links" %>
