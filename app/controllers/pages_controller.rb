@@ -5,4 +5,7 @@ class PagesController < ApplicationController
     @rentals = Rental.all
   end
 
+  private
+
+
 end
