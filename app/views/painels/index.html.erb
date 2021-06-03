@@ -7,6 +7,16 @@
         <h3>Gerenciar imóveis</h3>
         <%= link_to "Cadastrar imóvel", new_rental_path %>
 
+        <div class="rental-admin-container">
+          <% @rentals.each do |rental| %>
+            <div class="rental-admin-flex">
+              <p><%= rental.title %></p>
+              <%= link_to "Editar", edit_rental_path(rental.id) %>
+            </div>
+          <% end %>
+
+        </div>
       </div>
+
     </div>
 </div>
