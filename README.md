@@ -6,10 +6,10 @@ Projeto desenvolvido com o objetivo de desenvolver uma API para armazenar dados 
 Para fins didáticos este projeto foi hospedado no Heroku e pode ser visto [clicando aqui](http://api-realsate.herokuapp.com/).
 
 ## Tecnologias utilizadas neste projeto
-This project was created with: <br>
+Este projeto foi criado com:<br>
 <img alt="Ruby" src="https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white"/> <img alt="Rails" src="https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white"/> <img alt="Postgres" src ="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white"/> <img alt="Bootstrap" src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"/> <img alt="HTML5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/> <img alt="SASS" src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white"/>
 
-Gems used:
+Gems utilizadas:
 
  - [Devise](https://github.com/heartcombo/devise)
  - [Pundit](https://github.com/varvet/pundit)
